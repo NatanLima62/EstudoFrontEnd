@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <form id="meu-form">
+    <fieldset>
+        <legend>Formulario</legend>
+        <label for="campoNome">Nome:</label>
+        <input type="text" name="" id="campoNome"><br>
+        
+        <label for="tiposUsuario">Tipo de usário:</label>
+        <input id="tiposUsuario"
+        type="text"
+        list="tiposUsuario"
+        placeholder="Tipo usuario">
+        <datalist id="tiposUsuario">
+            <option value="1">Comum</option>
+            <option value="2">Adm</option>
+            <option value="3">Hacker</option>
+        </datalist><br>
+
+        <label for="cor">Escolha uma cor:</label>
+        <input id="cor" type="color" list="lista-cor">
+        <datalist id="lista-cor">
+            <option>#ffffff</option>
+            <option>#0001ff</option>
+            <option>#0000ff</option>
+            <option>#fff11f</option>
+            <option>#fff45f</option>
+        </datalist> <br>
+
+        <label for="subscribe">Receber notificações?</label>
+        <label for="sim">Sim</label>
+        <input type="radio" name="botaoselecao" id="sim">
+        <label for="nao">Nao</label>
+        <input type="radio" name="botaoselecao" id="nao">
+        <br>
+    </fieldset>
+    <fieldset>
+        <legend>Preferencias</legend>
+        <label for="musicas">Musicas</label>
+        <input type="checkbox" name="preferencias" id="musicas" value="musicas"><br>
+
+        <label for="tipoMusical">Escolha um tipo musical:</label>
+        <select name="TIpoMusical" id="tipoMusical">
+            <option value="">Tipo musical</option>
+            <option value="Rock">Rock</option>
+            <option value="Pagode">Pagode</option>
+        </select><br>
+
+        <label for="videos">Videos</label>
+        <input type="checkbox" name="preferencias" id="videos" value="videos"><br>
+
+        <label for="jogos">Jogos</label>
+        <input type="checkbox" name="preferencias" id="jogos" value="jogos"><br>
+
+        <label for="TipoJogo">Escolha um ou mais jogos:</label>
+        <select name="jogo" id="TipoJogo">
+            <option value="">Escolha um jogo</option>
+            <optgroup label="Terror">
+                <option value="re4">RE4</option>
+                <option value="sh">Silent hill</option>
+            </optgroup>
+            <optgroup label="Casual">
+                <option value="mario">Mario</option>
+                <option value="quemario">Que mario?</option>
+            </optgroup>
+        </select><br>
+
+        <label for="noticias">Noticias</label>
+        <input type="checkbox" name="preferencias" id="noticias" value="noticias">
+    </fieldset>
+    <input type="submit" form="meu-form" value="Enviar">
+   </form>
+</body>
+</html>
+
+<link rel="stylesheet" href="arquivo.css">

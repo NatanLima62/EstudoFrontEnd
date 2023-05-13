@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --body-bg-color: #121214;
+    --text-color: #E1E1E6;
+    --title-color: #04D361;
+    --form-color: #A8A8A8;
+    --bg-button-color: #8257e5;
+  }
+
+body {
+    overflow: hidden;
+  }
+
+.main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+
+.foto img {
+    max-width: 100%;
+    background-position: left;    
+    background-size: cover;
+    height: 100vh;
+}
+
+/*Main - Conteudo*/
+
+.conteudo{
+    background-color: black;
+    height: 100vh;
+    padding-left: 46px;
+}
+
+/*Main - Logo*/
+
+.conteudo .logo{
+    margin-top: 50px;
+    margin-bottom: 92px;
+}
+
+.conteudo .logo img{
+    width: 389px;
+    height: 95px;
+}
+
+/*Main - Artigo*/
+.conteudo .titulo{
+    color: var(--title-color);
+    font-weight: 700;
+    margin-bottom: 9px;
+    font-size: 50px;
+}
+
+.conteudo .sub_titulo{
+    color: var(--text-color);
+    font-weight: 500;
+    margin-bottom: 9px;
+    font-size: 40px;
+}
+
+.conteudo .noticia{
+    color: var(--text-color);
+    font-weight: 400;
+    margin-bottom: 50px;
+    font-size: 30px;
+}
+
+/*Main - Email*/
+.conteudo .email{
+    position: absolute;
+}
+
+.conteudo .email label{
+    color: var(--text-color);
+    font-weight: 400;
+    font-size: 30px;
+}
+.conteudo .formulario{
+    display: flex;
+    margin-top: 17px;
+    margin-bottom: 50px;
+}
+
+.conteudo .formulario .input_email{
+    width: 1300px;
+    height: 58px;
+    padding-left: 15px;
+    text-align: justify;
+    border-left: solid #04D361 5px;
+}
+
+.conteudo .formulario .botao{
+    background-color: var(--bg-button-color);
+    width: 63px;
+    height: 63px;
+}
+
+.conteudo .formulario .botao_enviar{
+    filter: invert(1);
+}
+
+.conteudo .ler_primeiro{
+    display: flex;
+    margin-top: 250px;
+}
+
+.conteudo .link a{
+    color: var(--bg-button-color);
+    font-size: 30px;
+}
+
+.conteudo .seta img{
+    margin-left: 3px;
+    margin-bottom: 3px;
+    filter: invert(1);
+    padding-top: 1px;
+}

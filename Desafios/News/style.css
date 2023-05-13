@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --body-bg-color: #121214;
+    --text-color: #E1E1E6;
+    --title-color: #04D361;
+    --form-color: #A8A8A8;
+    --bg-button-color: #8257e5;
+  }
+
+body{
+    overflow: hidden;
+}
+
+.page{
+    display: flex;
+    min-height: 100vh;
+}
+
+main{
+    background-color: var(--body-bg-color);
+    flex: 1;
+    min-width: 50vw;
+}
+
+main .logo img{
+    width: 900px;
+    margin-top: 50px;
+    margin-bottom: 92px;
+    margin-left: 46px;
+}
+
+main .conteudo {
+    margin-left: 46px;
+}
+
+main .conteudo .titulo{
+    color: var(--title-color);
+    font-weight: 700;
+    margin-bottom: 9px;
+    font-size: 50px;
+}
+
+main .conteudo .sub_titulo{
+    color: var(--text-color);
+    font-weight: 500;
+    margin-bottom: 9px;
+    font-size: 40px;
+}
+
+main .conteudo .noticia{
+    color: var(--text-color);
+    font-weight: 400;
+    margin-bottom: 50px;
+    font-size: 30px;
+}
+
+main .formulario{
+    margin-left: 46px;
+}
+
+main .formulario .label_email{
+    color: var(--text-color);
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+main .formulario .caixa_email{
+    display: flex;
+    position: absolute;
+}
+
+main .formulario .input_email{
+    width: 1300px;
+    height: 58px;
+    padding-left: 15px;
+    text-align: justify;
+    border-left: solid #04D361 5px;
+}
+
+main .formulario button{
+    background-color: var(--bg-button-color);
+    width: 63px;
+    height: 63px;
+}
+
+main .formulario .botao_enviar{
+    height: 40px;
+    filter: invert(1);
+}
+
+main .link_artigo{
+    margin-left: 46px;
+    display: flex;
+    margin-top: 250px;
+}
+
+main .link a{
+    color: var(--bg-button-color);
+    font-size: 30px;
+}
+
+main .botao_link img{
+    margin-left: 3px;
+    margin-bottom: 3px;
+    filter: invert(1);
+    padding-top: 1px;
+}
+
+aside{
+    background-color: blue;
+    min-width: 50vw;
+    flex: 1;
+}
+aside img{
+    width: 1260px;
+    min-height: 100vh;
+}

@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: #BB99DD;
+}
+
+:root {
+    --body-bg-color: #FAF7FD;
+    --purple: #BB99DD;
+}
+
+div {
+    padding: 10px;
+    width: 200px;
+    margin: 0 auto;
+}
+
+.img{
+    border-radius: 50%;
+    border: 1px solid;
+    padding: 2px;
+}
+
+.figcaption{
+    font-size: 10px;
+    font-weight: 300;
+}
+
+.botao{
+    font-size: 14px;
+    font-weight: 600;
+    width: 200px;
+    border: 1px solid;
+    cursor: pointer;
+    background-color: white;
+    margin: 3px;
+}
+
+.botao:hover{
+    background-color: rgba(128, 128, 128, 0.199);
+}
+
+.imagem{
+    padding: 5px;
+    width: 15px;
+}

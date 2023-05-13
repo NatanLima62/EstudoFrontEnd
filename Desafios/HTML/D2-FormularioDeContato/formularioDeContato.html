@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>
+                Entre em contato
+            </legend>
+
+            <div style="margin: 4px;">
+                Assunto:
+                <select name="tema">
+                    <option value="suporte">Suporte</option>
+                    <option value="sugestao">Sugestão</option>
+                    <option value="reclamacao">Reclamação</option>
+                </select>
+            </div>
+
+            <div style="margin: 4px;">
+                <label for="nome">Nome completo</label><br> 
+                <input type="text" name="nome" placeholder="Seu nome" id="nome">
+            </div>
+
+            <div style="margin: 4px;">
+                <label for="email">E-mail</label><br> 
+                <input type="email" name="nome" placeholder="email@seudominio.com" id="email">
+            </div>
+
+            <div style="margin: 4px;">
+                <label for="mensagem">Mensagem</label><br>
+                <textarea name="campoDeTexto" cols="30" rows="10" id="mensa" placeholder="Escreva uma mensagem"></textarea>
+            </div>
+
+            <div style="margin: 4px;">
+                <input type="checkbox" name="receberEmail" id="receberEmail">
+                <label for="receberEmail">Receber email</label>
+            </div>
+
+            <div style="margin: 4px;">
+                <input type="button" value="Enviar">
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>
