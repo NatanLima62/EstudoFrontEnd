@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --text-base: #afb6c2;
+    --text-title: #d4ccb6;
+    --background: #191816;
+    --form-background: #24221f;
+    --primary-color: #ffc632;
+  }
+
+.container{
+    display: flex;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+main{
+    flex: 1;
+    background-color: var(--background);
+}
+
+.conteudo{
+    background-color: var(--form-background);
+}
+
+.foto_background{
+    flex: 1;
+    background-image: url(assets/images/side-image-2x.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
