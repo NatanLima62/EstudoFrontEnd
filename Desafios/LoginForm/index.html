@@ -13,34 +13,35 @@
         <header><img src="assets/images/logo.svg" alt="" /></header>
         <div class="conteudo">
           <div class="form">
-            <div .titulo>
-              <img src="assets/images/eye.svg" alt="" />
-              <h1>Faça seu login</h1>
+            <div class="titulo">
+              <h1><img src="assets/images/log-in.svg" alt="" /> Faça seu login</h1>
+              <p>entre com as suas informações de cadastro</p>
             </div>
-            <div .email>
-              <label for="email">E-mail</label>
-              <input type="email" name="email" id="email" />
+            <label class="email_label" for="email">E-mail</label><br>
+            <div class="email">
+              <span><img src="assets/images/mail.svg" alt=""></span>
+              <input placeholder="Digite seu e-mail" class="input_email" type="email" name="email" id="email" />
             </div>
-            <div .senha>
-              <label for="senha">Senha</label>
-              <input type="email" name="senha" id="senha" />
+            <div class="senha">
+              <label for="senha">Senha</label><br>
+              <input placeholder="Digite sua senha" type="password" name="senha" id="senha" />
             </div>
             <div class="check">
-              <div .lembre_me>
-                <input type="checkbox" name="lembre_me" id="lembre_me" />
-                <label for="lembre_me">Lembre_me</label>
+              <div class="lembre_me">
+                <input type="checkbox" name="lembre_me" id="lembre-me_check" />
+                <label for="lembre-me_check">Lembre-me</label>
               </div>
               <div class="redefinir_senha">
                 <a href="#">Esqueci minha senha</a>
               </div>
-              <div class="login">
-                <button>
-                    <label for="">Entrar</label>
-                </button>
-              </div>
             </div>
+            <div class="login">
+              <button id="login_botao">
+                <label for="login_botao">Entrar</label>
+              </button>
+            </div>
+            <footer><a href="#">Não tem uma conta?Registre-se</a></footer>
           </div>
-          <footer>Não tem uma conta? <a href="#">Registre-se</a></footer>
         </div>
       </main>
 

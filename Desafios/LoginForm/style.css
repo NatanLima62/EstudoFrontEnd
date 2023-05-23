@@ -17,6 +17,12 @@
     overflow: hidden;
 }
 
+header{
+    margin-top: 40px;
+    margin-left: 40px;
+    width: 115px;
+    height: 28px;
+}
 main{
     flex: 1;
     background-color: var(--background);
@@ -24,8 +30,169 @@ main{
 
 .conteudo{
     background-color: var(--form-background);
+    margin: 194px 74px;
+    height: 512px;
+    display: flex;
+    justify-content: center;
 }
 
+.conteudo .titulo{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    color: #D4CCB6;
+    padding-top: 55px;
+    text-align: center;
+}
+
+.conteudo .titulo p{
+    text-align: left;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #AFB6C2;
+    margin-top: 5px;
+}
+
+.email{
+    display: flex;   
+    align-items: center;
+}
+
+.email_label{
+    text-indent: 20px;
+    padding-top: 27px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #AFB6C2;
+}
+
+.email span{
+    position: absolute;
+}
+
+.email input{
+    background-color: unset;
+    width: 335px;
+    height: 44px;
+    border: 1px solid #FFC632;
+    box-shadow: 0px 0px 0px 2px #FFDE88;
+    border-radius: 4px;
+}
+
+.email input::placeholder, .senha input::placeholder{
+    padding-left: 37px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #A9AFB9;
+}
+
+.senha{
+    padding-top: 20px;
+}
+
+.senha label{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #AFB6C2;
+}
+
+.senha input{
+    background-color: unset;
+    width: 335px;
+    height: 44px;
+    border: 1px solid #FFC632;
+    box-shadow: 0px 0px 0px 2px #FFDE88;
+    border-radius: 4px;
+}
+
+.check{
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.lembre_me{
+    display: flex;
+    gap: 5px;
+}
+
+.lembre_me input{
+    width: 20px;
+    height: 20px;
+}
+
+.lembre_me label{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #A9AFB9;
+}
+
+.redefinir_senha a{
+    text-decoration: none;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    color: #FFC632;
+}
+
+.login{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.login label{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 0.015em;
+    text-transform: uppercase;
+
+color: #473404;
+}
+.login button{
+    width: 334px;
+    height: 51px;
+    background: #FFC632;
+    border-radius: 4px;
+}
+
+footer{
+    padding-top: 14px;
+    display: flex;
+    justify-content: center;
+}
+
+footer a{
+    text-decoration: none;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #FFC632;
+}
 .foto_background{
     flex: 1;
     background-image: url(assets/images/side-image-2x.jpg);
