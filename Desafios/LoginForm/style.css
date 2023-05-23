@@ -59,8 +59,7 @@ main{
 }
 
 .email{
-    display: flex;   
-    align-items: center;
+    display: flex;
 }
 
 .email_label{
@@ -76,19 +75,48 @@ main{
 
 .email span{
     position: absolute;
+    margin: 12px 5px 12px 12px;
 }
 
-.email input{
+.email input:focus {
+    background-image: url(assets/images/mail-focus.svg);
+    background-repeat: no-repeat;
+    background-position: 12px;
     background-color: unset;
     width: 335px;
     height: 44px;
     border: 1px solid #FFC632;
     box-shadow: 0px 0px 0px 2px #FFDE88;
     border-radius: 4px;
+    text-indent: 40px;
+    margin-bottom: 20px;
 }
 
-.email input::placeholder, .senha input::placeholder{
-    padding-left: 37px;
+.email input{
+    background-image: url(assets/images/mail.svg);
+    background-repeat: no-repeat;
+    background-position: 12px;
+    background-color: unset;
+    width: 335px;
+    height: 44px;
+    border: 1px solid #868686;
+    border-radius: 4px;
+    text-indent: 40px;
+    margin-bottom: 20px;
+    color: #A9AFB9;
+}
+
+.email input::placeholder {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #A9AFB9;
+    margin-left: 20px;
+}
+
+.senha input::placeholder{
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -97,11 +125,17 @@ main{
     color: #A9AFB9;
 }
 
-.senha{
-    padding-top: 20px;
+.senha .lock{
+    position: absolute;
+    margin: 12px 5px 12px 12px;
 }
 
-.senha label{
+.senha .eye{
+    position: absolute;
+    margin: 12px 5px 12px 300px;
+}
+
+.senha_label{
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 500;
@@ -111,12 +145,30 @@ main{
 }
 
 .senha input{
+    background-image: url(assets/images/lock.svg);
+    background-repeat: no-repeat;
+    background-position: 12px;
+    background-color: unset;
+    width: 335px;
+    height: 44px;
+    border: 1px solid #868686;
+    border-radius: 4px;
+    text-indent: 40px;
+    margin-bottom: 20px;
+    color: #A9AFB9;
+}
+
+.senha input:focus{
+    background-image: url(assets/images/lock-focus.svg);
+    background-repeat: no-repeat;
+    background-position: 12px;
     background-color: unset;
     width: 335px;
     height: 44px;
     border: 1px solid #FFC632;
     box-shadow: 0px 0px 0px 2px #FFDE88;
     border-radius: 4px;
+    text-indent: 40px;
 }
 
 .check{
